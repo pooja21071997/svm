@@ -1,0 +1,94 @@
+/* Main navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  background: #fff;
+ 
+}
+
+/* Logo area */
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.school-name .title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #d60000;
+  display: block;
+}
+
+.school-name .subtitle {
+  font-size: 13px;
+  color: #d60000;
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.menu a,
+.dropdown-title {
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Active link */
+.active {
+  color: red;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  display: none;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+}
+
+.dropdown-menu a:hover {
+  background: #f2f2f2;
+  color: red;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: flex;
+}
+
+/* Bottom yellow line */
+.bottom-line {
+  height: 4px;
+  background-color: #f5a200;
+}

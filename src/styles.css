@@ -1,1 +1,96 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+.underline {
+  width: 80px;
+  height: 4px;
+  background-color: #f5a200;
+  margin-bottom: 25px;
+}
+
+/* style applied when the TS adds .active on the link */
+.navbar-nav .nav-link.active {
+  color: #007bff !important;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+}
+
+/* normal state */
+.navbar-nav .nav-link {
+  color: #000;
+  transition:
+    color 0.2s ease,
+    border-bottom 0.2s ease;
+}
+.line {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #ffb03b, #ff6a00);
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 2px;
+}
+.lineinspiration {
+  width: 80px;
+  height: 4px;
+  background: red;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 2px;
+}
+.pdf-viewer {
+  height:85vh; 
+  border:1px solid #ccc;
+}
+.pdf{
+    width:100%; 
+    height:100%; 
+    display:block;
+}
+
+/* Container for rocket icon and pulsing circle */
+.rocket-circle-container {
+	position: relative;
+	width: 60px;
+	height: 60px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.rocket-circle-container i {
+	position: relative;
+	z-index: 10;
+}
+
+/* Pulsing circle below rocket icon */
+.pulsing-circle {
+	width: 95px;
+	height: 95px;
+	border-radius: 50%;
+	background-color: #ffc107;
+	position: absolute;
+	top: 0;
+	
+	transform: translateX(-50%);
+	animation: circlePulse 2000ms ease-in-out infinite;
+	box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+	z-index: 0;
+}
+
+@keyframes circlePulse {
+	0% { 
+		transform: scale(0.8);
+		opacity: 0.6;
+	}
+	50% { 
+		transform: scale(1.1);
+		opacity: 1;
+	}
+	100% { 
+		transform: scale(0.8);
+		opacity: 0.6;
+	}
+}
+.bg-inspiration{
+	background: #fea100;
+}
