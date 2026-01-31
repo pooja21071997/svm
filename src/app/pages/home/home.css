@@ -1,0 +1,53 @@
+/* Smooth transition for cards */
+.feature-card {
+    border: 1px solid #0d6efd !important;  
+  transition: all 0.4s ease;
+  border-radius: 16px;
+ 
+}
+
+/* Hover effect */
+.feature-card:hover {
+     background: linear-gradient(135deg, #ffffff, #f0f6ff);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(13, 110, 253, 0.35); /* Bootstrap blue */
+}
+
+/* Icon transition */
+.feature-card i {
+  transition: transform 0.4s ease, color 0.4s ease;
+}
+
+/* Icon hover animation */
+.feature-card:hover i {
+  transform: scale(1.15);
+  color: #0d6efd; /* Bootstrap primary blue */
+}
+
+/* Text color change */
+.feature-card:hover p {
+  color: #333;
+  transition: color 0.4s ease;
+}
+.icon-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-circle {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55px;
+  height: 55px;
+  background-color: #f9a825; /* orange */
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.icon-wrapper i {
+  position: relative;
+  z-index: 1;
+  color: #444; /* icon color */
+}
