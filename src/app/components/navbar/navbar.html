@@ -19,23 +19,27 @@
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/">मुख्यपृष्ठ</a>
+          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLink="/">मुख्यपृष्ठ</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/about">आमच्याबद्दल</a>
+          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLink="/about"
+            >आमच्याबद्दल</a
+          >
         </li>
 
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/facilities">सुविधा</a>
+          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLink="/facilities"
+            >सुविधा</a
+          >
         </li>
 
         <!-- <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/academics">अभ्यासक्रम</a>
+          <a class="nav-link fw-semibold"   (click)="closeNavbar()" routerLink="/academics">अभ्यासक्रम</a>
         </li> -->
 
         <li class="nav-item">
-          <a class="nav-link fw-semibold" routerLink="/counselling-center">
+          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLink="/counselling-center">
             समुपदेशन
           </a>
         </li>
