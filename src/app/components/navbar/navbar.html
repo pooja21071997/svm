@@ -19,27 +19,27 @@
     <div class="collapse navbar-collapse" id="mainNavbar">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLink="/">मुख्यपृष्ठ</a>
+          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" routerLink="/">मुख्यपृष्ठ</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLink="/about"
+          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLinkActive="active" routerLink="/about"
             >आमच्याबद्दल</a
           >
         </li>
 
         <li class="nav-item">
-          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLink="/facilities"
+          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLinkActive="active" routerLink="/facilities"
             >सुविधा</a
           >
         </li>
 
         <!-- <li class="nav-item">
-          <a class="nav-link fw-semibold"   (click)="closeNavbar()" routerLink="/academics">अभ्यासक्रम</a>
+          <a class="nav-link fw-semibold"   (click)="closeNavbar()" routerLinkActive="active" routerLink="/academics">अभ्यासक्रम</a>
         </li> -->
 
         <li class="nav-item">
-          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLink="/counselling-center">
+          <a class="nav-link fw-semibold" (click)="closeNavbar()" routerLinkActive="active" routerLink="/counselling-center">
             समुपदेशन
           </a>
         </li>
