@@ -94,3 +94,27 @@
 .bg-inspiration{
 	background: #fea100;
 }
+/* Global image hover focus */
+img {
+  transition:
+    border 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
+}
+
+/* Hover & keyboard focus */
+img:hover,
+img:focus-visible {
+  border: 2px solid #fd7e14; /* Bootstrap orange */
+  box-shadow: 0 6px 18px rgba(253, 126, 20, 0.35);
+  transform: scale(1.02);
+}
+img {
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+img.no-hover:hover {
+  border: none;
+  box-shadow: none;
+  transform: none;
+}
