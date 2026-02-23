@@ -1,254 +1,235 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-6 col-sm-12 text-center my-4">
-      <img
-        src="assets/images/school.png"
-        alt="About Us"
-        class="img-fluid h-100 w-100 rounded-4 shadow shadow-lg"
-      />
-    </div>
-    <div class="col-md-6 col-sm-12 mt-5">
-      <h2 class="text-danger fw-bold">शाळेची माहिती</h2>
-      <div class="line"></div>
-      <p class="text-wrap">
-        श्रवण विकास मंदिर या कर्णबधिर शाळेत पूर्व प्राथमिक 1 ले ते इ. 10 वी पर्यंत शिक्षणाची
-        व्यवस्था असलेली ही शाळा सन 1995 पासून विवेकानंद प्रतिष्ठानमध्ये संचलित झाली. शाळेत मुलांचा
-        भाषा व वाचा विकासासाठी अद्ययावत अशी साऊंड प्रुफ (स्पीच रुम) उपलब्ध असून प्रत्येक वर्ग खोल्या
-        दृकश्राव्य साधनांसारख्या आधुनिक साधनांनी सुसज्ज आहे.
-      </p>
-      <p class="text-wrap">
-        याबरोबर मुलांच्या सर्वागिण विकासासाठी प्रशस्त असे क्रीडांगण व त्यांच्या आर्थिक पुनर्वसनासाठी
-        कार्यशाळा उपलब्ध आहे.
-      </p>
-      <a class="btn btn-warning" [routerLink]="['/about']" href="/about">Read More</a>
+<section class="about-section py-5">
+  <div class="container">
+    <div class="about-card reveal">
+      <div class="row align-items-center">
+        <!-- IMAGE SIDE -->
+        <div class="col-md-6 col-sm-12 text-center">
+          <div class="image-wrapper">
+            <img
+              src="assets/images/school.png"
+              alt="About Us"
+              class="img-fluid rounded-4 about-img"
+            />
+          </div>
+        </div>
+
+        <!-- CONTENT SIDE -->
+        <div class="col-md-6 col-sm-12">
+          <h2 class="section-title text-center fw-bold">शाळेची माहिती</h2>
+
+          <div class="line mb-4"></div>
+
+          <p>
+            श्रवण विकास मंदिर या कर्णबधिर शाळेत पूर्व प्राथमिक 1 ले ते इ. 10 वी पर्यंत शिक्षणाची
+            व्यवस्था असलेली ही शाळा सन 1995 पासून विवेकानंद प्रतिष्ठानमध्ये संचलित झाली. शाळेत
+            मुलांचा भाषा व वाचा विकासासाठी अद्ययावत अशी साऊंड प्रुफ (स्पीच रुम) उपलब्ध असून प्रत्येक
+            वर्ग खोल्या दृकश्राव्य साधनांसारख्या आधुनिक साधनांनी सुसज्ज आहे.
+          </p>
+
+          <p>
+            याबरोबर मुलांच्या सर्वागिण विकासासाठी प्रशस्त असे क्रीडांगण व त्यांच्या आर्थिक
+            पुनर्वसनासाठी कार्यशाळा उपलब्ध आहे.
+          </p>
+
+          <a class="btn read-btn mt-3" [routerLink]="['/about']"> Read More </a>
+        </div>
+      </div>
     </div>
   </div>
-</div>
+</section>
 <!-- dhey vidhan -->
-<div class="container my-5">
-  <div class="row text-center">
-    <div class="col-lg-6 col-md-6 col-12 mb-4">
-      <!-- Rocket icon -->
-      <div class="rocket-circle-container">
-        <i class="fa-sharp-duotone fa-solid fa-rocket fa-4x text-black mt-4 sizeadjust"></i>
-        <div class="pulsing-circle"></div>
+<section class="mission-section py-5 my-5">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <!-- English Mission -->
+      <div class="col-lg-5 col-md-6 col-12 d-flex justify-content-center">
+        <div class="mission-card reveal text-center">
+          <div class="rocket-wrapper mb-4">
+            <div class="rocket-circle">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+          </div>
+
+          <h2 class="section-title">Mission Statement</h2>
+          <div class="line m-auto mb-3"></div>
+
+          <p>
+            An Educational Institute which has,<br />
+            bright heritage of great fullness,<br />
+            which is learned and at the same time<br />
+            embracing the present with a keen<br />
+            prediction of future which will also brighten<br />
+            and increase the dignity of Indian culture,<br />
+            such generation will be formed here.<br /><br />
+
+            And the teachers who will carve this type<br />
+            of generation are built here. The only pilgrim<br />
+            of knowledge is none other but only...
+          </p>
+
+          <h4 class="fw-bold mt-3 highlight-text">Vivekanand Pratishthan!</h4>
+        </div>
       </div>
 
-      <div class="mt-5">
-        <h2 class="text-danger fw-bold mt-4">Mission Statement</h2>
-        <div class="line m-auto"></div>
+      <!-- Marathi Mission -->
+      <div class="col-lg-5 col-md-6 col-12 d-flex justify-content-center">
+        <div class="mission-card reveal text-center">
+          <div class="rocket-wrapper mb-4">
+            <div class="rocket-circle">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+          </div>
 
-        <p class="mt-3">
-          An Educational Institute which has,<br />
-          bright heritage of great fullness,<br />
-          which is learned and at the same time<br />
-          embracing the present with a keen<br />
-          prediction of future which will also brighten<br />
-          and increase the dignity of Indian culture,<br />
-          such generation will be formed here.<br /><br />
-          And the teachers who will carve this type<br />
-          of generation are built here. The only pilgrim<br />
-          of knowledge is non other but only . . . <br />
-        </p>
+          <div class="title-wrapper">
+            <h2 class="section-title">ध्येय विधान</h2>
+            <div class="line"></div>
+          </div>
+
+          <p>
+            तेजस्वी वारशाची कृतज्ञता असणारी<br />
+            वर्तमानाला बहुश्रुत होऊन कवेत घेणारी,<br />
+            भविष्याचा अचूक वेध घेता घेता...<br /><br />
+
+            भारतीय संस्कृतीची प्रतिष्ठा वर्धिष्णू करणारी पिढी<br />
+            येथे घडेल आणि त्या पिढीला घडवणारे शिक्षकही येथे घडतील.<br />
+            अर्थातच, शिक्षण क्षेत्रातील एक पवित्र तीर्थक्षेत्र म्हणजेच
+          </p>
+
+          <h4 class="fw-bold mt-3 highlight-text">विवेकानंद प्रतिष्ठान !</h4>
+        </div>
       </div>
-
-      <h4 class="fw-bold mt-3">Vivekanand Pratishthan!</h4>
-    </div>
-    <div class="col-lg-6 col-md-6 col-12 mb-4">
-      <!-- Rocket icon -->
-      <div class="rocket-circle-container">
-        <i class="fa-sharp-duotone fa-solid fa-rocket fa-4x text-black mt-4 sizeadjust"></i>
-        <div class="pulsing-circle"></div>
-      </div>
-
-      <div class="mt-5">
-        <h2 class="text-danger fw-bold mt-4">ध्येय विधान</h2>
-        <div class="line m-auto"></div>
-
-        <p class="mt-3">
-          तेजस्वी वारशाची कृतज्ञता असणारी<br />
-          वर्तमानाला बहुश्रुत होऊन कवेत घेणारी ,<br />
-          भविष्याचा अचूक वेध घेता घेता . . . <br /><br />
-
-          भारतीय संस्कृतीची प्रतिष्ठा वर्धिष्णू करणारी पिढी<br />
-          येथे घडेल आणि त्या पिढीला घडवणारे शिक्षकही येथे घडतील.<br />
-          अर्थातच, शिक्षण क्षेत्रातील एक पवित्र तीर्थक्षेत्र म्हणजेच
-        </p>
-      </div>
-
-      <h4 class="fw-bold mt-3">विवेकानंद प्रतिष्ठान !</h4>
     </div>
   </div>
-</div>
+</section>
 <!-- icon and counter -->
-<div class="container my-5">
-  <div class="row text-center">
-    <!-- Students -->
-    <div class="col-lg-3 col-md-6 mb-4 text-center">
-      <div class="icon-wrapper mb-3">
-        <span class="icon-circle"></span>
-        <i class="fa-regular fa-user fa-4x mb-3"></i>
+<section class="stats-section py-5 my-5 reveal counter-section">
+  <div class="container">
+    <div class="row g-4 justify-content-center text-center">
+      <!-- Students -->
+      <div class="col-lg-3 col-md-6 col-12 d-flex">
+        <div class="stat-card reveal  w-100">
+          <div class="icon-circle">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          
+          <h1 class="counter" #counter data-target="300">0</h1>
+          <p>विद्यर्थी</p>
+        </div>
       </div>
 
-      <h1 class="fw-bold text-warning">300+</h1>
-      <p class="fw-semibold">विद्यर्थी</p>
-    </div>
-
-    <!-- Staff -->
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="icon-wrapper mb-3">
-        <span class="icon-circle"></span>
-        <i class="fa-solid fa-chalkboard-user fa-4x mb-3"></i>
+      <!-- Staff -->
+      <div class="col-lg-3 col-md-6 col-12 d-flex">
+        <div class="stat-card reveal w-100">
+          <div class="icon-circle">
+            <i class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <h1 class="counter" #counter data-target="20">0</h1>
+          <p>अनुभवी शिक्षकवृंद</p>
+        </div>
       </div>
-      <h1 class="fw-bold text-warning">20+</h1>
-      <p class="fw-semibold">अनुभवी शिक्षकवृंद</p>
-    </div>
 
-    <!-- Experience -->
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="icon-wrapper mb-3">
-        <span class="icon-circle"></span>
-        <i class="fa-solid fa-school fa-4x mb-3"></i>
+      <!-- Experience -->
+      <div class="col-lg-3 col-md-6 col-12 d-flex">
+        <div class="stat-card reveal w-100">
+          <div class="icon-circle">
+            <i class="fa-solid fa-school"></i>
+          </div>
+          <h1 class="counter" #counter data-target="15">0</h1>
+          <p>अनुभव</p>
+        </div>
       </div>
-      <h1 class="fw-bold text-warning">15+</h1>
-      <p class="fw-semibold">अनुभव</p>
-    </div>
 
-    <!-- Activities -->
-    <div class="col-lg-3 col-md-6 mb-4">
-      <div class="icon-wrapper mb-3">
-        <span class="icon-circle"></span>
-        <i class="fa-solid fa-lightbulb fa-4x mb-3"></i>
+      <!-- Activities -->
+      <div class="col-lg-3 col-md-6 col-12 d-flex">
+        <div class="stat-card reveal w-100">
+          <div class="icon-circle">
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+         <h1 class="counter" #counter data-target="10">0</h1>
+          <p>नाविन्यपूर्ण उपक्रम</p>
+        </div>
       </div>
-      <h1 class="fw-bold text-warning">10+</h1>
-      <p class="fw-semibold">नाविन्यपूर्ण उपक्रम</p>
     </div>
   </div>
-</div>
+</section>
 <!-- our inspiration -->
-<div class="bg-inspiration p-4">
-  <div class="row mx-5">
-    <div class="container col-md-8 col-sm-12">
-      <div class="ms-5">
-        <h2 class="text-white">आमचे प्रेरणास्थान</h2>
-        <div class="lineinspiration"></div>
-        <p class="text-wrap text-white">
+<section class="bg-inspiration py-5 my-5">
+  <div class="container">
+    <div class="row align-items-center reveal g-4">
+
+      <!-- Text Section -->
+      <div class="col-lg-8 col-md-12">
+        <h2 class=" mb-3">आमचे प्रेरणास्थान</h2>
+        <div class="lineinspiration mb-4"></div>
+
+        <p class="">
           डॉ. अविनाश रामचंद्र आचार्य यांनी खऱ्या अर्थाने मानवी जिद्दीची आणि नवकल्पनांची उंची गाठली.
-          त्यांचे प्रेरणादायी नेतृत्व, ऊर्जस्वल व्यक्तिमत्त्व, अपार धैर्य आणि उत्कृष्टतेसाठीची न
-          थकणारी धडपड हे सर्व आपल्यासाठी सदैव मार्गदर्शक ठरते.
+          त्यांचे प्रेरणादायी नेतृत्व, ऊर्जस्वल व्यक्तिमत्त्व, अपार धैर्य आणि उत्कृष्टतेसाठीची
+          न थकणारी धडपड हे सर्व आपल्यासाठी सदैव मार्गदर्शक ठरते.
         </p>
-        <p class="text-wrap text-white">
+
+        <p class="">
           दूरदर्शी विचारांचे धनी असलेल्या डॉ. आचार्य यांची जिद्द आणि जिवंतपणा हा आपल्यासाठी आशेचा
           किरण आहे. स्वप्न पाहण्याची हिंमत आणि ती प्रत्यक्षात उतरवण्याची ताकद त्यांच्यात होती.
           त्यांचे कार्य, त्यांची आठवण हे सर्व आपल्याला भावनिकरित्या जोडून ठेवतात आणि सांगतात की,
           महानतेचा प्रवास नेहमीच सुंदर असतो आणि तो पूर्ण मनाने जगण्यासारखा असतो.
         </p>
       </div>
-    </div>
-    <div class="col-md-4 col-sm-12 d-flex justify-content-center align-items-center">
-      <img src="assets/images/founder-img.jpg" alt="founder-img" class="h-100 w-100 rounded" />
+
+      <!-- Image Section -->
+      <div class="col-lg-4 col-md-12 text-center">
+        <img src="assets/images/founder-img.jpg"
+             alt="founder-img"
+             class="img-fluid rounded shadow-lg founder-img" />
+      </div>
+
     </div>
   </div>
-</div>
+</section>
 <!-- our objectives -->
-<div class="container mt-5">
-  <div class="mb-5">
-    <h2 class="text-danger fw-bold">आमची मूल्ये</h2>
-    <div class="line"></div>
-  </div>
-  <div class="text-center">
-    <img src="assets/images/objectives.jpg" class="h-100 w-100" alt="Objectives" />
-  </div>
-</div>
-<!-- Features Section -->
-<section class="py-5 bg-white">
+<section class="values-section py-5 my-5">
   <div class="container">
+
+    <!-- Heading -->
+    <div class="text-center mb-5">
+      <h2 class="fw-bold section-title">आमची मूल्ये</h2>
+      <div class="line mx-auto"></div>
+    </div>
+
+    <!-- Image -->
+    <div class="row justify-content-center">
+      <div class="col-lg-10 text-center">
+        <img src="assets/images/objectives.jpg"
+             class="img-fluid rounded shadow-lg values-img"
+             alt="Objectives" />
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- Features Section -->
+<section class="features-section py-5">
+  <div class="container">
+
     <!-- Title -->
-    <div class="mb-5">
-      <h2 class="text-danger fw-bold">शाळेची वैशिष्ट्ये</h2>
-      <div class="bg-warning" style="width: 60px; height: 5px"></div>
+    <div class="text-center mb-5">
+      <h2 class="section-title fw-bold">शाळेची वैशिष्ट्ये</h2>
+      <div class="section-line mx-auto"></div>
     </div>
 
     <!-- Cards -->
     <div class="row g-4">
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 feature-card text-center border-0">
-          <div class="card-body">
-            <i class="fa-solid fa-book-open-reader fa-4x text-warning  mb-3"></i>
-            <p class="card-text text-muted">सन २००५-०६ ते आतापर्यत सतत बॅचेस उत्तीर्ण झाल्या असून 100% निकाल</p>
+      <div class="col-lg-3 col-md-4 col-sm-6" *ngFor="let feature of features">
+        <div class="feature-card reveal text-center p-4 h-100">
+          <div class="icon-wrapper mb-3">
+            <i [class]="feature.icon"></i>
           </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 feature-card text-center border-0">
-          <div class="card-body">
-            <i class="fa-solid fa-earth-asia fa-4x text-warning  mb-3"></i>
-            <p class="card-text text-muted">शहरापासून दूर निसर्गरम्य परिसरात शाळेची भव्य इमारत</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 feature-card text-center border-0">
-          <div class="card-body">
-            <i class="fa-solid fa-user-check fa-4x text-warning  mb-3"></i>
-            <p class="card-text text-muted">
-           सांस्कृतिक कार्यक्रमातून शालेय रंगतरंग हे वार्षिक स्नेहसंमेलन
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 feature-card text-center border-0">
-          <div class="card-body">
-            <i class="fa-solid fa-network-wired fa-4x text-warning  mb-3"></i>
-            <p class="card-text text-muted">
-             प्रत्येक वर्गात एफ.एम.व लूप इन्डक्शन सिस्टीम
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 feature-card text-center border-0">
-          <div class="card-body">
-            <i class="fa-solid fa-user-graduate fa-4x text-warning  mb-3"></i>
-            <p class="card-text text-muted">शिक्षक व विद्यार्थ्यांसाठी सुसज्ज ग्रंथालय</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 feature-card text-center border-0">
-          <div class="card-body">
-            <i class="fa-solid fa-book-open fa-4x text-warning  mb-3"></i>
-            <p class="card-text text-muted">
-              शालेय परिसरात Wi-Fi यंत्रणेची उपलब्धता
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 feature-card text-center border-0">
-          <div class="card-body">
-            <i class="fa-solid fa-chalkboard-user fa-4x text-warning  mb-3"></i>
-            <p class="card-text text-muted">
-           शिक्षकांसाठी मार्गदर्शन व प्रशिक्षण व्यवस्था
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-6">
-        <div class="card h-100 feature-card text-center border-0">
-          <div class="card-body">
-            <i class="fas fa-award fa-4x text-warning mb-3"></i>
-            <p class="card-text text-muted">
-             मुलांच्या भाषा व वाचा विकासासाठी ‘स्पीच ट्रेनर’ आणि सांऊडप्रुफ रुमची व्यवस्था
-            </p>
-          </div>
+          <p class="feature-text">
+            {{ feature.text }}
+          </p>
         </div>
       </div>
     </div>
+
   </div>
 </section>

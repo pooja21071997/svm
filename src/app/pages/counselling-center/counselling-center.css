@@ -1,0 +1,132 @@
+/* ===============================
+   ULTRA PREMIUM COUNSELLING SECTION
+================================= */
+
+.counselling-section {
+  position: relative;
+  background: linear-gradient(135deg, #f4f2ff, #ffffff);
+  overflow: hidden;
+}
+
+/* Floating background glow */
+.counselling-section::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(247,68,160,0.25), transparent 70%);
+  top: -100px;
+  right: -100px;
+  color: #fff;
+  animation: floatGlow 6s infinite ease-in-out alternate;
+}
+
+@keyframes floatGlow {
+  from { transform: translateY(0px); }
+  to { transform: translateY(40px); }
+}
+
+/* Animated Border Card */
+.counselling-container {
+  position: relative;
+  padding: 40px;
+  border-radius: 25px;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(21,2,92,0.1);
+  overflow: hidden;
+  transition: 0.4s ease;
+}
+
+/* Moving Gradient Border */
+.counselling-container::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: 28px;
+  background: linear-gradient(270deg, #15025c, #f744a0, #15025c);
+  background-size: 400% 400%;
+  z-index: -1;
+  color: #fff;
+  animation: borderMove 6s ease infinite;
+}
+
+@keyframes borderMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Hover Lift */
+.counselling-container:hover {
+  transform: translateY(-10px);
+  color: #fff;
+  box-shadow:
+    0 30px 80px rgba(21,2,92,0.25),
+    0 0 40px rgba(247,68,160,0.35);
+}
+.counselling-section h2:hover{
+    color: #f8f3f6;
+}
+
+/* Image Floating Animation */
+.counselling-section img {
+  border-radius: 20px;
+  transition: 0.4s ease;
+  animation: floatImage 4s ease-in-out infinite alternate;
+  box-shadow: 0 25px 60px rgba(21,2,92,0.2);
+}
+
+@keyframes floatImage {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-15px); }
+}
+
+.counselling-section img:hover {
+  transform: scale(1.05);
+}
+
+/* Title Animation */
+.counselling-section h2 {
+  color: #15025c;
+  position: relative;
+  animation: slideDown 1s ease forwards;
+  opacity: 0;
+}
+
+/* Glowing underline */
+.counselling-section .line {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #15025c, #f744a0);
+  border-radius: 4px;
+  margin-top: 10px;
+  animation: glowLine 2s infinite alternate;
+}
+
+@keyframes glowLine {
+  from { box-shadow: 0 0 5px rgba(247,68,160,0.4); }
+  to { box-shadow: 0 0 20px rgba(247,68,160,0.8); }
+}
+
+/* Paragraph Stagger Reveal */
+.counselling-section p {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: revealText 1s ease forwards;
+}
+
+.counselling-section p:nth-child(1) { animation-delay: 0.5s; }
+.counselling-section p:nth-child(2) { animation-delay: 1s; }
+
+@keyframes revealText {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Slide Down */
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: translateY(0); }
+}

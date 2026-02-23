@@ -1,8 +1,14 @@
 /* Main navbar */
 .navbar {
+
   padding: 10px 40px;
-  background: #fff;
- 
+  /* background: #fff; */
+  background: linear-gradient(
+    120deg,
+    #f4f4f5,
+     #f1edef,
+    #f3f0f2
+  );
 }
 
 /* Logo area */
